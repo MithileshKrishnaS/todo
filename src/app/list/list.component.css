@@ -1,0 +1,51 @@
+*{
+    font-family: 'Sora', sans-serif;
+}
+
+#input{
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 40vw;
+    height: 30vh;
+    background-color: gray;
+    padding-top: 1%;
+    /* padding-left: 8%; */
+}
+
+hr{
+    border-top: 1px solid rgb(252, 248, 248);  
+}
+
+h1{
+    margin-left: 40%;
+    color: white;
+}
+
+input{
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 14.2vw;
+    height: 4vh;
+    padding-left: 15%;
+    font-size: 1em;
+}
+
+button{
+    margin-left: 66.5%;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+#output{
+    margin-left: 30%;
+    margin-right: 29%;
+}
+
+#task{
+    font-size: 1.5em;
+    background-color: yellowgreen;
+    padding-left: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="input">
+        <h1>ToDo List</h1>
+        <hr>
+        <input type="text" placeholder="*ngFor completed"[(ngModel)]="inputField" (keyup)="onKey($event)"><br>
+        <button type="submit" (click)="submit()" [disabled]="dis">Add List</button>
+    </div>
+    <div *ngIf="anylist;">
+        <div *ngFor="let li of list | slice:1; let i = index" id="output" >
+            <p (click)="remove(li,i+1)" id="task">{{li}}</p>
+            <!-- <p>{{i+1}}</p> -->
+             
+        </div>
+    </div>
+</body>
+</html>
